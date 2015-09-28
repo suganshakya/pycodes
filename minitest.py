@@ -12,8 +12,8 @@ s1 = net.addSwitch('s1')
 c0 = net.addController('c0')
 
 # Setting own IP
-h1.setIP('192.168.50.1',24)
-h2.setIP('192.168.50.2',24)
+h1.setIP('192.168.50.1/24')
+h2.setIP('192.168.50.2/24')
 
 # Creating Links
 net.addLink(h1,s1)
