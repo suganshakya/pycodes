@@ -3,6 +3,8 @@
 import time
 from mininet.net import Mininet
 # from mininet.util import createLink --- not working
+# from mininet.topo import SingleSwitchTopo
+from mininet.cli import CLI
 net = Mininet()
 
 #Creating Nodes
@@ -24,7 +26,9 @@ net.start()
 print("h1 ip: " + str(h1.IP()))
 print("h2 ip: " + str(h2.IP()))
 #net.dump()
-net.pingAll()
+print h1.cmd('ping -c1', h2.IP())
+CLI(net)
+# net.pingAll()
 net.stop()
 print("End")
 
