@@ -1,5 +1,7 @@
 #! /usr/bin/python
 
+from mininet.net import Mininet
+# from mininet.util import createLink
 net = Mininet()
 h1 = net.addHost('h1')
 h2 = net.addHost('h2')
