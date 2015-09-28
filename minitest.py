@@ -1,5 +1,6 @@
 #! /usr/bin/python
 
+import time
 from mininet.net import Mininet
 # from mininet.util import createLink
 net = Mininet()
