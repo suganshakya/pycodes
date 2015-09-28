@@ -2,6 +2,8 @@
 
 import time
 from mininet.net import Mininet
+from mininet.node import Node
+from mininet.link import Link
 # from mininet.util import createLink --- not working
 # from mininet.topo import SingleSwitchTopo
 from mininet.cli import CLI
@@ -14,8 +16,8 @@ s1 = net.addSwitch('s1')
 c0 = net.addController('c0')
 
 # Setting own IP but not working
-#h1.setIP('192.168.50.1/24')
-#h2.setIP('192.168.50.2/24')
+h1.setIP('192.168.50.1/24')
+h2.setIP('192.168.50.2/24')
 
 # Creating Links
 net.addLink(h1,s1)
