@@ -2,16 +2,19 @@
 
 import time
 from mininet.net import Mininet
-from mininet.util import createLink
-#Creating Nodes
+# from mininet.util import createLink --- not working
 net = Mininet()
+
+#Creating Nodes
 h1 = net.addHost('h1')
 h2 = net.addHost('h2')
 s1 = net.addSwitch('s1')
 c0 = net.addController('c0')
+
 # Creating Links
 net.addLink(h1,s1)
 net.addLink(h2,s1)
+
 # Setting own IP
 h1.setIP('192.168.50.1',24)
 h2.setIP('192.168.50.2',24)
