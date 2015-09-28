@@ -16,9 +16,10 @@ net.start()
 h2.cmd('python -m SimpleHTTPServer 80 &')
 time.sleep(2)
 print h1.cmd('curl', h2.IP())
-CLI(net)
+#CLI(net)
 h2.cmd('kill %python')
 net.stop()
+print("End")
 
 
 
