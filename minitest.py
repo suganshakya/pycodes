@@ -27,7 +27,7 @@ print("h1 ip: " + str(h1.IP()))
 print("h2 ip: " + str(h2.IP()))
 #net.dump()
 print h1.cmd('ping -c1', h2.IP())
-CLI(net)
+CLI(net)  # it will launch mininet> in the prompt
 # net.pingAll()
 net.stop()
 print("End")
